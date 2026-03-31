@@ -1,0 +1,101 @@
+.taskitem {
+  background: #ffffff;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskitem-error {
+  color: #ef4444;
+  margin-bottom: 8px;
+}
+
+.taskitem-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.taskitem-title {
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.taskitem-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.taskitem-edit {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.taskitem-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.taskitem-btn {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.taskitem-btn.edit {
+  background: #2563eb;
+}
+
+.taskitem-btn.edit:hover {
+  background: #1d4ed8;
+}
+
+.taskitem-btn.delete {
+  background: #ef4444;
+}
+
+.taskitem-btn.delete:hover {
+  background: #dc2626;
+}
+
+.taskitem-btn.save {
+  background: #16a34a;
+}
+
+.taskitem-btn.save:hover {
+  background: #15803d;
+}
+
+.taskitem-btn.cancel {
+  background: #6b7280;
+}
+
+.taskitem-btn.cancel:hover {
+  background: #4b5563;
+}
+
+@media (max-width: 600px) {
+  .taskitem-view {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .taskitem-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .taskitem-edit {
+    flex-direction: column;
+  }
+
+  .taskitem-btn {
+    width: 100%;
+  }
+}

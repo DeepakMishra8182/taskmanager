@@ -1,0 +1,122 @@
+.dashboard {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.dashboard-logout {
+  padding: 8px 14px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-logout:hover {
+  background: #dc2626;
+}
+
+.dashboard-error {
+  color: #ef4444;
+  margin-bottom: 10px;
+}
+
+.dashboard-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dashboard-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.dashboard-btn {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-btn:hover {
+  background: #1d4ed8;
+}
+
+.dashboard-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-item {
+  background: #ffffff;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dashboard-text {
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.dashboard-edit {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.dashboard-edit:hover {
+  background: #1d4ed8;
+}
+
+.dashboard-delete {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.dashboard-delete:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .dashboard-form {
+    flex-direction: column;
+  }
+
+  .dashboard-btn {
+    width: 100%;
+  }
+
+  .dashboard-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+}
