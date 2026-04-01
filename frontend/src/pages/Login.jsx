@@ -2,9 +2,11 @@ import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import './login.css'
+import { useAuth } from "../context/AuthContext";
 
 const Login = () => {
   const navigate = useNavigate();
+  const { setUser } = useAuth();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -34,6 +36,7 @@ const Login = () => {
 
       setEmail("");
       setPassword("");
+      setUser(res.data.user);
       navigate("/dashboard");
     } catch (err) {
       setError(err.response?.data?.message || "Login failed");
